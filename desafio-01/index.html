@@ -1,0 +1,19 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="desafio">
+    <p>Usando Vue - {{nome}}, {{idade}}</p>
+
+    <p>Idade x3: {{ idadeVz3() }} </p>
+
+    <p>{{ Math.random() }}</p>
+
+    <p>
+        <img v-bind:src="imagem" height="200">
+    </p>
+
+    <p>
+        <input type="text" v-bind:value="nome">
+    </p>
+</div>
+
+<script src="app.js"></script>

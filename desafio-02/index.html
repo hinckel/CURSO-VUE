@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="desafio">
+    <button v-on:click="exibirAlerta"> Exibir alerta </button>
+
+    <hr />
+
+    <div>
+        <input type="text" v-on:keyup="valor = $event.target.value">
+        <p>{{valor}}</p>
+    </div>
+
+    <hr/>
+
+    <div>
+        <input type="text" v-on:keydown.enter="valor = $event.target.value">
+            <p>{{valor}}</p>
+        </div>
+</div>
+
+<script src="app.js"></script>
