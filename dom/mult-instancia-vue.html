@@ -11,7 +11,7 @@
 </div>
 
 <script>
-    new Vue({
+const vm1 = new Vue({
         el:'#app',
         data: {
             titulo1: 'teste1'
@@ -23,13 +23,14 @@
         }
     })
 
-    new Vue({
+const vm2 = new Vue({
         el: '#app2',
         data: {
             titulo2: 'teste2'
         }, 
         methods: {
             alterar() {
+                vm1.titulo1 += '???'
                 this.titulo2 += '!!!'
             }
         }
