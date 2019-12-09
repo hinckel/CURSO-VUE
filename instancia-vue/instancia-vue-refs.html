@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <h1 ref="classRef">{{ claz }}</h1>
+    <h2>{{ module }}</h2>
+    <button @click="alternateClass">Alternate Class</button>
+    <button @click="alternateModule">Alternate Module</button>
+</div>
+
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            claz: 'Class: Using Refs',
+            module: 'Grade: Vue Instance'
+        },
+        methods: {
+            alternateClass() {
+                this.claz += '#'
+            },
+            alternateModule() {
+                this.module += '#'
+            }
+        }
+    })
+    
+    //vm.$refs.classRef.innerText = 'Using ref, directly changed'
+</script>
