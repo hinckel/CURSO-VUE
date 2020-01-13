@@ -6,8 +6,8 @@
 
 		<hr>
 
-		<p v-destaque:fundo="'lightblue'"> Usando diretiva personalizada </p>
-		<p v-destaque="cor"> Usando diretiva personalizada </p>
+		<p v-destaque:fundo.atrasar="'lightblue'"> Usando diretiva personalizada </p>
+		<p v-destaque.atrasar="cor"> Usando diretiva personalizada </p>
 	</div>
 </template>
 
