@@ -38,7 +38,10 @@ export default {
 		return {
 			cpf: '60070080090'
 		}
-	}
+	},
+  created() {
+    console.log('created - App.vue')
+  }
 }
 </script>
 

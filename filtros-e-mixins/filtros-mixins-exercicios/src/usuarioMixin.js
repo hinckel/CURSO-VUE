@@ -3,5 +3,8 @@ export default {
     usuarioLogado() {
       return 'Luiz Felipe Hinckel'
     }
+  },
+  created() {
+    console.log('created usuarioMixin.js')
   }
 }
